@@ -6,8 +6,8 @@ const Navbar = () => {
         <Link href="/">
           <li className="mr-3 cursor-pointer">Home</li>
         </Link>
-        <Link href="/product">
-          <li className="mr-3 cursor-pointer">Product</li>
+        <Link href="/heroes">
+          <li className="mr-3 cursor-pointer">Heroes</li>
         </Link>
         <Link href="/posts">
           <li className="mr-3 cursor-pointer">Posts</li>

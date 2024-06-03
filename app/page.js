@@ -1,9 +1,14 @@
 import Image from "next/image";
+import HeroSection from "./components/hero/page";
+import About from "./components/about/page";
+import Testimonial from "./components/testimonial/page";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
- 
+    <main>
+      <HeroSection />
+      <About />
+      <Testimonial />
     </main>
   );
 }
