@@ -2,7 +2,7 @@ import { tokuHero } from "..//data/tokuhero";
 import Image from "next/image";
 const Heroes = () => {
     return (
-        <div className="flex justify-center" style={{ backgroundImage: "url('/d417got-de332d28-2d89-4abe-9371-fa8b721e140f.png')", }}>
+        <div className="flex justify-center" >
             <div className="grid grid-cols-3 mt-10 ps-10 gap-9">
                 {tokuHero.map((item) => (
                     <div className="border-2 rounded-lg cursor-pointer" key={item.id}>

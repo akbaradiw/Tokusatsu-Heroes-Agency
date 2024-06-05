@@ -9,8 +9,8 @@ const Navbar = () => {
         <Link href="/heroes">
           <li className="mr-3 cursor-pointer border border-none  bg-red-600 rounded-md py-1 px-1 outline-none  hover:bg-red-800">Heroes</li>
         </Link>
-        <Link href="/posts">
-          <li className="mr-3 cursor-pointer border border-none  bg-red-600 rounded-md py-1 px-1 outline-none  hover:bg-red-800">Posts</li>
+        <Link href="/gallery">
+          <li className="mr-3 cursor-pointer border border-none  bg-red-600 rounded-md py-1 px-1 outline-none  hover:bg-red-800">Gallery</li>
         </Link>
       </ul>
     </nav>
