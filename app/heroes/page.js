@@ -7,40 +7,58 @@ const Heroes = () => {
   const [filteredItems, setFilteredItems] = useState(tokuHero);
   const [thisFilter, setThisFilter] = useState("");
 
-  let filters = ["Showa", "Reiwa", "Heisei"];
+  // let filters = ["Kamen Rider", "Metal Heroes"];
 
-  const handleFilter = (dataSelect) => {
-    if (selectedFilters.includes(dataSelect)) {
-      let filters = selectedFilters.filter((el) => el !== dataSelect);
-      setSelectedFilters(filters);
-    } else {
-      setSelectedFilters([...selectedFilters, dataSelect]);
-    }
-  };
+  // const handleFilter = (dataSelect) => {
+  //   if (selectedFilters.includes(dataSelect)) {
+  //     let filters = selectedFilters.filter((el) => el !== dataSelect);
+  //     setSelectedFilters(filters);
+  //   } else {
+  //     setSelectedFilters([...selectedFilters, dataSelect]);
+  //   }
+  // };
 
+  // useEffect(() => {
+  //   filterData();
+  // }, [selectedFilters]);
+
+  // const filterData = () => {
+  //   if (selectedFilters.length > 0) {
+  //     let tempItems = selectedFilters.map((dataSelect) => {
+  //       let temp = tokuHero.filter((item) => item.category === dataSelect);
+  //       return temp;
+  //     });
+  //     setFilteredItems(tempItems.flat());
+  //   }
+  //    else {
+  //     setFilteredItems([...tokuHero]);
+  //   }
+
+  // };
+
+  // cara kedua
   useEffect(() => {
-    filterData();
-  }, [selectedFilters]);
-
-  const filterData = () => {
-    if (selectedFilters.length > 0) {
-      let tempItems = selectedFilters.map((dataSelect) => {
-        let temp = tokuHero.filter((item) => item.Era === dataSelect);
-        return temp;
-      });
-      setFilteredItems(tempItems.flat());
+    if (thisFilter) {
+      setFilteredItems(
+        tokuHero.filter((product) => product.category === thisFilter)
+      );
     } else {
-      setFilteredItems([...tokuHero]);
+      setFilteredItems(tokuHero);
     }
+  }, [thisFilter, tokuHero]);
+
+  const handleFilter = (e) => {
+    setThisFilter(e.target.value);
   };
   return (
-    <div className="flex justify-center pt-10">
-      <div className="mt-10">
-        {filters.map((Era, idx) => (
+    <div className=" grid pt-10">
+      {/* <div className="mt-10 flex justify-center gap-10">
+        {filters.map((category, idx) => (
+          <div>
           <button
-            onClick={() => handleFilter(Era)}
+            onClick={() => handleFilter(category)}
             className={`button ${
-              selectedFilters?.includes(Era) ? "active" : ""
+              selectedFilters?.includes(category) ? "active" : ""
             }`}
             key={`filters-${idx}`}
             style={{
@@ -67,13 +85,36 @@ const Heroes = () => {
               },
             }}
           >
-            {Era}
+            {category}
           </button>
+          </div>
         ))}
+      </div> */}
+      {/* <select onChange={handleFilter}>
+        <option value="">All</option>
+        <option value="Kamen Rider">Kamen Rider</option>
+        <option value="Metal Heroes">Metal Heroes</option>
+      </select> */}
+      <div className="flex justify-center gap-5 mt-10">
+      <button className="cursor-pointer  border border-none text-white bg-red-600 rounded-full py-1 px-3  hover:bg-red-800" onClick={handleFilter} value={""}>
+        All
+      </button>
+      <button className="cursor-pointer border border-none text-white bg-red-600 rounded-full py-1 px-3  hover:bg-red-800"
+        onClick={handleFilter}
+        value={"Kamen Rider"}
+      >
+        Kamen Rider
+      </button>
+      <button className="cursor-pointer border border-none text-white bg-red-600 rounded-full py-1 px-3  hover:bg-red-800"
+        onClick={handleFilter}
+        value={"Metal Heroes"}
+      >
+        Metal Heroes
+      </button>
       </div>
-      <div className="grid grid-cols-5 mt-10 ps-10 gap-9">
+      <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 mt-10 lg:ps-10 px-3 md:px-6 md:gap-6 gap-2 lg:gap-9">
         {/* {tokuHero.filter((item) =>
-              item.Era.toLowerCase().includes(thisFilter.toLowerCase())
+              item.category.toLowerCase().includes(thisFilter.toLowerCase())
             ) */}
         {filteredItems.map((item) => (
           <div
@@ -85,12 +126,11 @@ const Heroes = () => {
               alt="Hero Image"
               width={150}
               height={200}
-              className="w-auto h-auto"
+              className="w-auto h-auto "
             />
             <div className="text-red-600 ms-3 pt-3">
               <p>Name : {item.name}</p>
               <p>Type : {item.category}</p>
-              <p>Era : {item.Era}</p>
             </div>
           </div>
         ))}

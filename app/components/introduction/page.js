@@ -5,15 +5,15 @@ import Image from "next/image";
 
 const Introduction = () => {
   return (
-    <section className="p-20 border-b-4  border-red-600">
-      <div className="lg:flex lg:justify-around lg:mx-auto lg:pt-10 grid  ">
+    <section className="lg:p-20 p-5 border-b-4  border-red-600">
+      <div className="lg:flex lg:justify-around lg:mx-auto lg:pt-10 grid    ">
         {/* <IntroPict /> */}
         <Image
           src="/alltokuatsu.png"
           alt="Hero Image"
-          width={400}
+          width={740}
           height={400}
-          className=" w-auto h-auto hover:-translate-y-4 hover:scale-110 transition ease-in-out delay-150"
+          className="mt-10 lg:mt-0  hover:-translate-y-4 hover:scale-110 transition ease-in-out delay-150"
         />
 
         <div className="lg:ms-20 lg:ps-20 pt-14 ">
