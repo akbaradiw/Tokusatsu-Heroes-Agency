@@ -35,8 +35,8 @@ const Testimonial = () => {
             key={index}
             className={
               index === carousel
-                ? "border-2 rounded-lg w-1/2 h-auto"
-                : "border-2 rounded-lg hidden w-1/2 h-auto"
+                ? "border-2 border-red-600 shadow-md rounded-lg lg:w-1/2 lg:h-auto mx-4"
+                : "border-2 border-red-600  shadow-md rounded-lg hidden lg:w-1/2 lg:h-auto"
             }
           >
             <div className="flex justify-center">

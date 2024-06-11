@@ -1,29 +1,37 @@
 "use client";
+import Image from "next/image";
 
-import IntroPict from "../intropict/page";
-
+// import IntroPict from "../intropict/page";
 
 const Introduction = () => {
   return (
     <section className="p-20 border-b-4  border-red-600">
-      <div className="container flex justify-around mx-auto pt-10">
-        <IntroPict />
-    
-        <div className="ms-20 ps-20 py-5 px-5 ">
-          <h1 class=" text-3xl ms-20 text-center mb-6 font-extrabold border-none bg-red-600 rounded-md py-1 px-1 text-white ">
+      <div className="lg:flex lg:justify-around lg:mx-auto lg:pt-10 grid  ">
+        {/* <IntroPict /> */}
+        <Image
+          src="/alltokuatsu.png"
+          alt="Hero Image"
+          width={400}
+          height={400}
+          className=" w-auto h-auto hover:-translate-y-4 hover:scale-110 transition ease-in-out delay-150"
+        />
+
+        <div className="lg:ms-20 lg:ps-20 pt-14 ">
+          <h1 class=" lg:text-3xl lg:ms-20 text-center lg:mb-6 font-extrabold border-none bg-red-600 rounded-md py-1 px-1 text-white ">
             TOKUSATSU HERO AGENCY
           </h1>
-          <p class="mb-6 ms-20 text-lg f">
-            Call us if you in dangerous. Lorem ipsum dolor sit amet, consectetur
+          <p class="lg:mb-6 lg:ms-20 lg:text-lg text-sm pt-6 pb-3 ">
+            Call us if you in dangerous. Kami menyediakan Kamen Riders, Super Sentai, Ultraman, & Metal Heroes untuk meminjamkan kekuatannya guna membantu kalian. Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Sed euismod, nisl nec ultricies lacinia, nisl nisl
             aliquam nisl, nec euismod nisl nisl eu nisl. Sed euismod, nisl nec
             ultricies lacinia, nisl nisl aliquam nisl, nec euismod nisl nisl eu
             nisl.
+            危険な場合はお電話ください。私たちは、あなたの夢をかなえるために、仮面ライダー、スーパー戦隊、ウルトラマン、メタルヒーローたちを応援しています。
             良い顧客サービスを提供することは重要ですが、それは良い仕事ですが、良い仕事です
           </p>
           <a
             href="#"
-            class="inline-flex ms-20 items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+            class="inline-flex lg:ms-20 items-center lg:justify-center px-5 py-3 text-base font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
           >
             Check Our Heroes
             <svg
