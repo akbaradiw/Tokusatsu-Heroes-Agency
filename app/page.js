@@ -1,7 +1,8 @@
 import Image from "next/image";
-import Introduction from "./components/introduction/page";
-import ImageSection from "./components/image/page";
-import About from "./components/about/page";
+import Introduction from "./components/introduction/introduction";
+import ImageSection from "./components/image/image";
+import About from "./components/about/about";
+import Test from "./components/test.js";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Introduction />
       <ImageSection />
       <About />
+      <Test />
     </main>
   );
 }

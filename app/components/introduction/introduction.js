@@ -1,13 +1,11 @@
 "use client";
 import Image from "next/image";
 
-// import IntroPict from "../intropict/page";
 
 const Introduction = () => {
   return (
     <section className="lg:p-20 p-5 border-b-4  border-red-600">
       <div className="lg:flex lg:justify-around lg:mx-auto lg:pt-10 grid    ">
-        {/* <IntroPict /> */}
         <Image
           src="/alltokuatsu.png"
           alt="Hero Image"

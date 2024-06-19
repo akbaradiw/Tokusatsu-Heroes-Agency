@@ -1,0 +1,31 @@
+
+import Testimonial from "../testimonial/testimonial";
+const About = () => {
+  return (
+    <div className="lg:flex  lg:justify-around lg:mt-20 mt-10  ">
+      <div className="lg:w-1/2 lg:h-auto ">
+        <h1 className=" text-2xl my-2 text-center   font-bold  text-red-600 ">
+          Our Services
+        </h1>
+        <ul className="lg:text-lg ps-2 mx-4 mb-8  border-2 shadow-md rounded-md border-red-600 divide-y divide-red-600">
+          <li className="hover:text-red-600 cursor-pointer ">
+            Memberantas begal/klitih{" "}
+          </li>
+          <li className="hover:text-red-600 cursor-pointer">
+            Membantu warga sipil yang sedang dalam keadaan bahaya
+          </li>
+          <li className="hover:text-red-600 cursor-pointer">
+            Menyelidiki/menangani kasus korupsi para pejabat
+          </li>
+          <li className="hover:text-red-600 cursor-pointer">
+            Melindungi bumi dari serangan mahluk luar angkasa{" "}
+          </li>
+        </ul>
+      </div>
+      <div>
+        <Testimonial />
+      </div>
+    </div>
+  );
+};
+export default About;
