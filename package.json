@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "alpinejs": "^3.14.1",
     "flowbite": "^2.3.0",
+    "flowbite-react": "^0.10.1",
+    "framer-motion": "^11.2.12",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
