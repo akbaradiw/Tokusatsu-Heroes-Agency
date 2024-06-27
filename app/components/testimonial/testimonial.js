@@ -2,6 +2,8 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { testimonialList } from "../../data/testimony";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Testimonial = () => {
   const [carousel, setCarousel] = useState(0);
 
@@ -24,12 +26,24 @@ const Testimonial = () => {
       clearTimeout(timer);
     };
   }, [carousel]);
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div>
-      <h1 className="text-2xl font-bold text-red-600 text-center">
+      <h1
+        className="text-2xl font-bold text-red-600 text-center"
+        data-aos="fade-down"
+        data-aos-duration="2000"
+      >
         Testimonials
       </h1>
-      <div className="flex justify-center mt-6">
+      <div
+        className="flex justify-center mt-6"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         {testimonialList.map((item, index) => (
           <div
             key={index}

@@ -5,7 +5,7 @@ import About from "./components/about/about";
 
 export default function Home() {
   return (
-    <main>
+    <main className="scroll-smooth focus:scroll-auto">
       <Introduction />
       <ImageSection />
       <About />
