@@ -17,7 +17,7 @@ const Heroes = () => {
     } else {
       setFilteredItems(tokuHero);
     }
-  }, [thisFilter, tokuHero]);
+  }, [thisFilter]);
 
   useEffect(() => {
     AOS.init();

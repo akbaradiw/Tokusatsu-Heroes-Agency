@@ -12,8 +12,8 @@ const Gallery = () => {
   return (
     <div>
       <h1 className="lg:pt-40 pt-10 lg:text-3xl text-xl md:text-2xl text-center">
-        "Selama beberapa dekade kami telah berkontribusi demi kedamaian
-        kehidupan umat manusia"
+        Selama beberapa dekade kami telah berkontribusi demi kedamaian
+        kehidupan umat manusia
       </h1>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:pt-20 pt-10 pb-40 px-10 ">
         {porto.map((item) => (

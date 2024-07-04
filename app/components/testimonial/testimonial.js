@@ -25,7 +25,7 @@ const Testimonial = () => {
     return () => {
       clearTimeout(timer);
     };
-  }, [carousel]);
+  }, []);
 
   useEffect(() => {
     AOS.init();
