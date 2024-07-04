@@ -105,7 +105,7 @@ export let tokuHero = [
   {
     id: 13,
     name: "Jiban",
-    image: "/Jiban.png",
+    image: "/jiban.png",
     description:
       "He was a human revived as a cyborg by Doctor Igarashi to fight Bioron.",
     category: "Metal Heroes",
