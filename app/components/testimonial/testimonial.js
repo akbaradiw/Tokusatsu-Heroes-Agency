@@ -43,6 +43,7 @@ const Testimonial = () => {
         className="flex justify-center mt-6"
         data-aos="fade-up"
         data-aos-duration="2000"
+        data-aos-once="false"
       >
         {testimonialList.map((item, index) => (
           <div
@@ -73,13 +74,13 @@ const Testimonial = () => {
       <div className="flex justify-center mt-6">
         <button
           onClick={clickPrev}
-          className="bg-red-600 text-white px-4 mx-2 rounded-lg"
+          className="bg-red-600 text-white px-4 mx-2 rounded-lg  lg:hover:bg-red-800 shadow-md "
         >
           Prev
         </button>
         <button
           onClick={clickNext}
-          className="bg-red-600 text-white px-4  mx-2 rounded-lg"
+          className="bg-red-600 text-white px-4  mx-2 rounded-lg  lg:hover:bg-red-800 shadow-md "
         >
           Next
         </button>

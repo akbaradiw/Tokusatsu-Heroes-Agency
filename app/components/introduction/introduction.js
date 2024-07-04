@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -11,13 +10,8 @@ const Introduction = () => {
     AOS.init();
   }, []);
   return (
-    <section className="lg:p-20 p-5 border-b-4  border-red-600">
-      {/* <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 4 }}
-        transition={{ duration: 1.0 }}
-      > */}
-      <div className="lg:flex lg:justify-around lg:mx-auto lg:pt-10 grid ">
+    <section className="lg:p-20 p-5 border-b-4   border-red-600">
+     <div className="lg:flex lg:justify-around lg:mx-auto lg:pt-10 md:mb-4 grid md:grid-cols-2 md:gap-10 ">
         <Image
           src="/alltokuatsu.png"
           alt="Hero Image"
@@ -38,12 +32,12 @@ const Introduction = () => {
           </h1>
           <p
             class="lg:mb-6 lg:ms-20 lg:text-lg text-sm pt-6 pb-3 "
-            data-aos="fade-right"
+            data-aos="fade-down"
             data-aos-duration="3000"
           >
             Call us if you in dangerous. Kami menyediakan Kamen Riders, Super
             Sentai, Ultraman, & Metal Heroes untuk meminjamkan kekuatannya guna
-            membantu kalian. Lorem ipsum dolor sit amet, consectetur adipiscing
+            membantu kalian ketika sedang dalam keadaan bahaya. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Sed euismod, nisl nec ultricies lacinia, nisl nisl aliquam
             nisl, nec euismod nisl nisl eu nisl. Sed euismod, nisl nec ultricies
             lacinia, nisl nisl aliquam nisl, nec euismod nisl nisl eu nisl.
@@ -54,7 +48,7 @@ const Introduction = () => {
           <Link
             href="/heroes"
             className="inline-flex lg:ms-20 items-center shadow-md lg:justify-center px-5 py-3 text-base font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
-            data-aos="fade-left"
+            data-aos="flip-up"
             data-aos-duration="5000"
           >
             Choose Our Heroes
@@ -78,7 +72,7 @@ const Introduction = () => {
           </Link>
         </div>
       </div>
-      {/* </motion.div> */}
+
     </section>
   );
 };

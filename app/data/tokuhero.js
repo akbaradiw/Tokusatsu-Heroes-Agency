@@ -11,7 +11,8 @@ export let tokuHero = [
     id: 28,
     name: "Ultraseven",
     image: "/ultra7.png",
-    description: "Ultraseven is the third Ultra-being to come to Planet Earth (first and only in the spin-offs). He came to the planet after being sent to map the Milky Way, but this planet caught his attention and arrived here, he took the appearance of a brave man and renamed himself as Dan Moroboshi, and joined the UG. ",
+    description:
+      "Ultraseven is the third Ultra-being to come to Planet Earth (first and only in the spin-offs). He came to the planet after being sent to map the Milky Way, but this planet caught his attention and arrived here, he took the appearance of a brave man and renamed himself as Dan Moroboshi, and joined the UG. ",
     category: "Ultraman",
   },
   {
@@ -41,9 +42,9 @@ export let tokuHero = [
     id: 29,
     name: "Cosmos",
     image: "/Cosmos.png",
-    description: "Ultraman Cosmos is an Ultra known for his calm and gentle fighting style, and his compassion for monsters. ",
+    description:
+      "Ultraman Cosmos is an Ultra known for his calm and gentle fighting style, and his compassion for monsters. ",
     category: "Ultraman",
-
   },
   {
     id: 11,
@@ -73,7 +74,8 @@ export let tokuHero = [
     id: 50,
     name: "Agul",
     image: "/agul.png",
-    description: "Ultraman Agul is the blue giant born from the light of Ocean, who awakened during the threat of the Radical Destruction Bringer.. ",
+    description:
+      "Ultraman Agul is the blue giant born from the light of Ocean, who awakened during the threat of the Radical Destruction Bringer.. ",
     category: "Ultraman",
   },
   {
@@ -118,10 +120,12 @@ export let tokuHero = [
   },
   {
     id: 30,
-  name: "Zero",
-image: "/Zero0.png",
-  description:"Ultraman Zero  is the son of Ultraseven. After his banishment from the Land of Light and disciplinary training under Ultraman Leo, he was released by Ultraman King to aid the Ultra Warriors in battle against Ultraman Belial, with whom he would battle again on multiple occasions for years to come.",
-category: "Ultraman",},
+    name: "Zero",
+    image: "/Zero0.png",
+    description:
+      "Ultraman Zero  is the son of Ultraseven. After his banishment from the Land of Light and disciplinary training under Ultraman Leo, he was released by Ultraman King to aid the Ultra Warriors in battle against Ultraman Belial, with whom he would battle again on multiple occasions for years to come.",
+    category: "Ultraman",
+  },
   {
     id: 5,
     name: "Kuuga",
@@ -210,9 +214,9 @@ category: "Ultraman",},
     id: 56,
     name: "Blazar",
     image: "/UltraBlazar.png",
-    description:
-      "He is the first Ultra to merge with both two human.",
-    category: "Ultraman",},
+    description: "He is the first Ultra to merge with both two human.",
+    category: "Ultraman",
+  },
   {
     id: 17,
     name: "Blue Swat Show",
@@ -258,8 +262,21 @@ category: "Ultraman",},
     id: 51,
     name: "Ace",
     image: "/ace.png",
-    description:
-      "He is the first Ultra to merge with both two human.",
+    description: "He is the first Ultra to merge with both two human.",
     category: "Ultraman",
-  }
+  },
+  {
+    id: 99,
+    name: "Sunan Kalijaga",
+    image: "/sunankalijaga.png",
+    description: "mantap.",
+    category: "Other",
+  },
+  {
+    id: 100,
+    name: "Saitama",
+    image: "/opm.jpg",
+    description: "mantap.",
+    category: "Other",
+  },
 ];
