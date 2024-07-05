@@ -28,7 +28,7 @@ const Introduction = () => {
             data-aos="fade-up"
             data-aos-duration="2000"
           >
-            TOKUSATSU HERO AGENCY
+            TOKUSATSU HEROES AGENCY
           </h1>
           <p
             class="lg:mb-6 lg:ms-20 lg:text-lg text-sm pt-6 pb-3 "
