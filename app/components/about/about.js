@@ -11,7 +11,7 @@ const About = () => {
 
   return (
     <div className="lg:flex  lg:justify-around lg:mt-20 mt-10 grid md:grid-cols-2 md:mb-12  ">
-      <div className="lg:w-1/2 lg:h-auto " data-aos="fade-right" data-aos-duration="2000">
+      <div className="lg:w-1/2 lg:h-auto lg:ms-10 " data-aos="fade-right" data-aos-duration="2000">
         <h1 className=" text-2xl my-2 text-center   font-bold  text-red-600 ">
           Our Services
         </h1>

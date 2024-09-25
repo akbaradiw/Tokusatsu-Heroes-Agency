@@ -10,8 +10,10 @@ const Introduction = () => {
     AOS.init();
   }, []);
   return (
-    <section className="lg:p-20 p-5 border-b-4   border-red-600">
-     <div className="lg:flex lg:justify-around lg:mx-auto lg:pt-10 md:mb-4 grid md:grid-cols-2 md:gap-10 ">
+
+    
+    <section className="xl:p-20 p-5 border-b-4   border-red-600">
+     <div className=" pt-10  md:mb-4 grid md:grid-cols-2 md:gap-10 ">
         <Image
           src="/alltokuatsu.png"
           alt="Hero Image"
@@ -22,16 +24,16 @@ const Introduction = () => {
           data-aos-duration="1000"
         />
 
-        <div className="lg:ms-20 lg:ps-20 pt-14 ">
+        <div className=" pt-14 ">
           <h1
-            className=" lg:text-3xl lg:ms-20 text-center lg:mb-6 shadow-md font-extrabold border-none bg-red-600 rounded-md py-1 px-1 text-white "
+            className="  lg:text-2xl text-center lg:mb-6 shadow-md font-extrabold border-none bg-red-600 rounded-md py-1 px-1 text-white "
             data-aos="fade-up"
             data-aos-duration="2000"
           >
             TOKUSATSU HEROES AGENCY
           </h1>
           <p
-            class="lg:mb-6 lg:ms-20 lg:text-lg text-sm pt-6 pb-3 "
+            class="lg:mb-6  lg:text-lg text-sm pt-6 pb-3 "
             data-aos="fade-down"
             data-aos-duration="3000"
           >
@@ -47,7 +49,7 @@ const Introduction = () => {
 
           <Link
             href="/heroes"
-            className="inline-flex lg:ms-20 items-center shadow-md lg:justify-center px-5 py-3 text-base font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+            className="inline-flex  items-center shadow-md lg:justify-center px-5 py-3 text-base font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
             data-aos="flip-up"
             data-aos-duration="5000"
           >

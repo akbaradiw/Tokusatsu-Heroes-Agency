@@ -5,6 +5,7 @@ import { testimonialList } from "../../data/testimony";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const Testimonial = () => {
+  
   const [carousel, setCarousel] = useState(0);
 
   const clickNext = () => {
