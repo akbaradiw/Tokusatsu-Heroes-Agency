@@ -19,7 +19,7 @@ const ImageSection = () => {
         Our Heroes Will Protect You!!
       </h1>
 
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 lg:gap-40 gap-10 mx-20  pt-8 ">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 lg:gap-10 gap-10 mx-20  pt-8 ">
         <div
           className="border-2 shadow-lg border-red-600 rounded-lg hover:-translate-y-4 hover:scale-110 transition ease-in-out delay-150"
           data-aos="flip-down"
